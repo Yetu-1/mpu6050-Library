@@ -22,7 +22,7 @@ void write_mpu6050(uint8_t addr, uint8_t byte){
 	i2c_Start(0x02,0);                  // Start communication with the MPU-6050.
 	i2c_writeByte(addr);                // Set address to write to
 	i2c_writeByte(byte);                // Write byte to the specified address
-	i2c_Stop(); 						// End communication with the MPU-6050
+	i2c_Stop(); 						// End communication with the MPU-6050 
 }
 
 uint8_t read_mpu6050(uint8_t addr){
